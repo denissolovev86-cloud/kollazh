@@ -33,15 +33,15 @@
             margin-bottom: 15px;
         }
         .logo {
-            width: 95%;
-            max-width: 450px;
+            width: 90%;
+            max-width: 400px;
             height: auto;
             display: block;
-            transform: scale(1.05);
-            transform-origin: center;
+            border-radius: 15px; /* Скругление углов логотипа */
+            overflow: hidden; /* Обрезка белых краев */
         }
         .stars {
-            font-size: 26px;
+            font-size: 24px;
             color: #066b6e;
             margin: 5px 0;
             letter-spacing: 4px;
@@ -67,8 +67,8 @@
             margin: 12px 0;
             transition: all 0.2s;
             font-weight: bold;
-            width: 95%;
-            max-width: 400px;
+            width: 90%; /* Уменьшена ширина кнопок */
+            max-width: 380px;
             text-align: center;
         }
         .btn:hover {
@@ -88,17 +88,17 @@
                 padding: 20px;
             }
             .logo {
-                width: 100%;
-                max-width: 400px;
-                transform: scale(1.15); /* Увеличение для мобильных */
+                width: 95%;
+                max-width: 350px;
+                border-radius: 12px; /* Меньшее скругление для мобильных */
             }
             h1 {
                 font-size: 20px;
                 max-width: 95%;
             }
             .btn {
-                width: 98%;
-                max-width: 380px;
+                width: 92%;
+                max-width: 330px;
             }
         }
     </style>
