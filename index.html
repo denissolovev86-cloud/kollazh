@@ -20,13 +20,17 @@
             max-width: 500px;
             background: white;
             border-radius: 20px;
-            padding: 25px;
+            padding: 30px; /* Увеличен отступ для лучшей компоновки */
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         .logo {
-            max-width: 90%;
+            width: 95%; /* Точная ширина для выравнивания */
+            max-width: 400px; /* Ограничение для больших экранов */
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 15px; /* Уменьшен отступ снизу */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         .stars {
             font-size: 24px;
@@ -52,6 +56,10 @@
             margin: 15px 0;
             transition: all 0.2s;
             font-weight: bold;
+            width: 95%; /* Ширина кнопок сопоставима с логотипом */
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .btn:hover {
             background: #055a5c;
@@ -66,10 +74,15 @@
 
         @media (max-width: 768px) {
             .container {
-                padding: 20px;
+                padding: 25px;
             }
             .logo {
-                max-width: 95%;
+                width: 90%; /* Для мобильных - 90% ширины */
+                max-width: 350px;
+            }
+            .btn {
+                width: 90%;
+                max-width: 350px;
             }
             h1 {
                 font-size: 20px;
@@ -79,10 +92,9 @@
 </head>
 <body>
     <div class="container">
-        <!-- Новая ссылка на логотип (без пробелов!) -->
+        <!-- Логотип с правильной шириной -->
         <img src="https://raw.githubusercontent.com/denissolovev86-cloud/malahitovaya-shkatulka/main/1758884358.png" class="logo" alt="Логотип Малахитовая шкатулка">
         
-        <!-- 5 закрашенных звезд -->
         <div class="stars">★★★★★</div>
         
         <h1>Пожалуйста, оставьте отзыв о нашей работе!</h1>
