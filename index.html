@@ -22,29 +22,39 @@
             border-radius: 20px;
             padding: 25px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
         }
         .logo {
-            width: 98%;
+            width: 95%;
             max-width: 450px;
             height: auto;
-            margin-bottom: 10px;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            transform: scale(1.05);
+            transform-origin: center;
         }
         .stars {
             font-size: 26px;
             color: #066b6e;
-            margin-bottom: 5px;
+            margin: 5px 0;
             letter-spacing: 4px;
             font-weight: bold;
         }
         h1 {
             color: #066b6e;
-            font-size: 24px;
+            font-size: 22px;
             line-height: 1.3;
             margin: 10px 0;
             font-weight: 600;
+            text-align: center;
+            max-width: 90%;
         }
         .btn {
             display: block;
@@ -54,13 +64,12 @@
             padding: 15px 25px;
             border-radius: 10px;
             font-size: 18px;
-            margin: 15px 0;
+            margin: 12px 0;
             transition: all 0.2s;
             font-weight: bold;
             width: 95%;
             max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
+            text-align: center;
         }
         .btn:hover {
             background: #055a5c;
@@ -71,6 +80,7 @@
             color: #7bbeb3;
             font-size: 14px;
             margin-top: 25px;
+            text-align: center;
         }
 
         @media (max-width: 768px) {
@@ -78,27 +88,29 @@
                 padding: 20px;
             }
             .logo {
-                width: 95%;
-                max-width: 380px;
+                width: 100%;
+                max-width: 400px;
+                transform: scale(1.15); /* Увеличение для мобильных */
             }
             h1 {
-                font-size: 22px;
+                font-size: 20px;
+                max-width: 95%;
             }
             .btn {
-                width: 92%;
-                max-width: 350px;
+                width: 98%;
+                max-width: 380px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Увеличенный логотип -->
-        <img src="https://raw.githubusercontent.com/denissolovev86-cloud/malahitovaya-shkatulka/main/1758884358.png" class="logo" alt="Логотип Малахитовая шкатулка">
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/denissolovev86-cloud/malahitovaya-shkatulka/main/1758884358.png" class="logo" alt="Логотип Малахитовая шкатулка">
+        </div>
         
         <div class="stars">★★★★★</div>
         
-        <!-- Новый текст с смайликом -->
         <h1>Поделитесь своими эмоциями 💎</h1>
         
         <a href="https://yandex.ru/maps/org/malakhitovaya_shkatulka/1343108527/reviews/?add-review=true&display-text=Малахитовая%20шкатулка&indoorLevel=1&ll=45.024145%2C53.197606&mode=search&sctx=ZAAAAAgBEAAaKAoSCbdfPlkxgkZAEVUWhV0UmUpAEhIJDJQUWABTtj8RXJIDdjV5oj8iBgABAgMEBSgKOABA1Z8NSAFqAnR1nQHNzMw9oAEAqAEAvQEUhYtewgELr%2Bu4gAXq08yNuQWCAhsoKGNoYWluX2lkOigxMjQyNzI2NTI3NjUpKSmKAgCSAgCaAgxkZXNrdG9wLW1hcHOqAl0xMjQyNzI2NTI3NjUsNjAwMjU2OCwzNTA0NDgwODYzLDgyODU3NjU1NTcsNjAwMzQzOSw2MDAyMjkzLDE2NzA5MTI3OTk4Miw1OTYzOTkzMDU2LDU5NjM5ODY2MTKwAgE%3D&sll=45.024145%2C53.197606&sspn=0.008854%2C0.003663&tab=reviews&text=%7B%22text%22%3A%22Малахитовая%20шкатулка%22%2C%22what%22%3A%5B%7B%22attr_name%22%3A%22chain_id%22%2C%22attr_values%22%3A%5B%22124272652765%22%5D%7D%5D%7D&z=17.3" class="btn">Оценить в Яндекс.Картах</a>
